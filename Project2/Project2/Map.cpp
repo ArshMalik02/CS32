@@ -20,7 +20,7 @@ Map::Map()
 
 Map::Map(const Map& other)
 {
-    if (other.head == nullptr)
+    if (other.head == nullptr)          // Checking if the other map is empty
     {
         head = nullptr;
         tail = nullptr;
@@ -29,7 +29,7 @@ Map::Map(const Map& other)
     else
     {
         head = nullptr; tail = nullptr; m_size = 0;
-        for (int i = 0; i < other.size(); i++)
+        for (int i = 0; i < other.size(); i++)          // Looping through the other map inserting its values in                                               //the current map
         {
             KeyType Key; ValueType Val;
             other.get(i, Key, Val);
@@ -42,11 +42,11 @@ Map::Map(const Map& other)
 
 Map& Map::operator=(const Map& rhs)
 {
-    if (this != &rhs)
+    if (this != &rhs)     // this map shouldn't be same as the rhs map
     {
-        Map temp(rhs);
+        Map temp(rhs);      // Creating a temp map and swapping the entire map with the current one
         swap(temp);
-    }
+    }                       // Here temp goes away as it's a local variable
     return *this;
 }
 
@@ -68,7 +68,7 @@ bool Map::contains(const KeyType& key) const
         return  false;
     for (Node* p = head; p != nullptr; p = p -> next)
     {
-        if (p -> m_key == key)
+        if (p -> m_key == key)              // Looping through all the nodes and if key is found, then return true
             return true;
     }
     return false;
@@ -76,10 +76,10 @@ bool Map::contains(const KeyType& key) const
 
 bool Map::insert(const KeyType& key, const ValueType& value)
 {
-    if (contains(key))
+    if (contains(key))                     // Map should not contain already contain the same key
         return false;
     
-    if (empty())
+    if (empty())                            // Custom Case: Inserting the first element
     {
         Node* n = new Node;
         n->m_key = key;
@@ -158,7 +158,7 @@ bool Map::insert(const KeyType& key, const ValueType& value)
 
 bool Map::update(const KeyType& key, const ValueType& value)
 {
-    for (Node*p = head; p!=nullptr; p=p->next)
+    for (Node*p = head; p!=nullptr; p=p->next)   // Looping through Map and finding the key, setting its new value
     {
         if (p->m_key == key)
         {
@@ -171,7 +171,7 @@ bool Map::update(const KeyType& key, const ValueType& value)
 
 bool Map::insertOrUpdate(const KeyType& key, const ValueType& value)
 {
-    for (Node*p = head; p!=nullptr; p=p->next)
+    for (Node*p = head; p!=nullptr; p=p->next)       // If key exists, need to update it
     {
         if (p!=nullptr && p->m_key == key)
         {
@@ -179,7 +179,7 @@ bool Map::insertOrUpdate(const KeyType& key, const ValueType& value)
             return true;
         }
     }
-    return insert(key, value);
+    return insert(key, value);                      // Otherwise, insert
 }
 
 bool Map::erase(const KeyType& key)
@@ -221,7 +221,7 @@ bool Map::erase(const KeyType& key)
 
 bool Map::get(const KeyType& key, ValueType& value) const
 {
-    for (Node* p = head; p != nullptr; p = p->next)
+    for (Node* p = head; p != nullptr; p = p->next)    // If the key is found, set value to key's value
     {
         if (p != nullptr && p->m_key == key)
         {
@@ -234,12 +234,12 @@ bool Map::get(const KeyType& key, ValueType& value) const
 
 bool Map::get(int i, KeyType& key, ValueType& value) const
 {
-    if (i<0 || i >= size() || empty())
+    if (i<0 || i >= size() || empty())          // checking if i is in range
         return false;
     
     int counter = 0;
     Node* p = head;
-    while (p != nullptr && counter != i)
+    while (p != nullptr && counter != i)        // taking p to the required node
     {
         p = p->next;
         counter++;
@@ -251,15 +251,15 @@ bool Map::get(int i, KeyType& key, ValueType& value) const
 
 void Map::swap(Map& other)
 {
-    Node* tempHead = this->head;
+    Node* tempHead = this->head;            // swapping head pointer
     this->head = other.head;
     other.head = tempHead;
     
-    Node* tempTail = this->tail;
+    Node* tempTail = this->tail;            // swapping tail pointer
     this->tail = other.tail;
     other.tail = tempTail;
     
-    int tempSize = m_size;
+    int tempSize = m_size;                  // swapping sizes
     m_size = other.m_size;
     other.m_size = tempSize;
 }
@@ -275,7 +275,7 @@ void Map::dump() const
 
 Map::~Map()
 {
-    for (Node* p = head; p!=nullptr;)
+    for (Node* p = head; p!=nullptr;)           // Deleting all the nodes
     {
         Node* n = p->next;
         delete p;
@@ -287,7 +287,7 @@ Map::~Map()
 
 bool merge(const Map& m1, const Map& m2, Map& result)
 {
-    Map temp = m1;
+    Map temp = m1;              // Creating a temp map. will be changed later as required
     
     bool returnVal = true;
     
@@ -296,22 +296,22 @@ bool merge(const Map& m1, const Map& m2, Map& result)
         KeyType k;
         ValueType v;
         m2.get(i, k, v);
-        if (m1.contains(k))
+        if (m1.contains(k))             // if both m1 and m2 contain k
         {
             ValueType m1value;
             m1.get(k, m1value);
-            if (m1value != v)
+            if (m1value != v)           // if k's values dont match then remove from temp
             {
                 temp.erase(k);
                 returnVal = false;
             }
         }
-        else
+        else                            // only one of m2 contains k
         {
             temp.insert(k, v);
         }
     }
-    result = temp;
+    result = temp;                      // finally assigning our temp to result
     return returnVal;
 }
 
@@ -319,16 +319,16 @@ void reassign(const Map& m, Map& result)
 {
     result = m;
     KeyType firstK; ValueType firstV;
-    result.get(0, firstK, firstV);
+    result.get(0, firstK, firstV);         // Getting the first node's key and value
     for (int i = 1; i < result.size(); i++)
     {
         KeyType tempKi; ValueType tempVi;
         KeyType tempK0; ValueType tempVi0;
-        result.get(i, tempKi, tempVi);
+        result.get(i, tempKi, tempVi);          // Assigning the current node's values to its prev node
         result.get(i-1, tempK0, tempVi0);
         result.update(tempK0, tempVi);
     }
     KeyType lastKey; ValueType lastVal;
     result.get(result.size()-1, lastKey, lastVal);
-    result.update(lastKey, firstV);
+    result.update(lastKey, firstV);             // setting the last node's value to the first's
 }

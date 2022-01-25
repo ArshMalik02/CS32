@@ -21,9 +21,9 @@ class Map
     
     ~Map();        // Destructor
     
-    Map(const Map& other);
+    Map(const Map& other);      // Copy Constructor
     
-    Map& operator=(const Map& rhs);
+    Map& operator=(const Map& rhs);    // Assignment operator
 
     bool empty() const;  // Return true if the map is empty, otherwise false.
     
@@ -48,9 +48,6 @@ class Map
       // the value of the second parameter; return true in this case.
       // If key is not equal to any key currently in the map, and if the
       // key/value pair can be added to the map, then do so and return true.
-      // Otherwise, make no change to the map and return false (indicating
-      // that the key is not already in the map and the map has a fixed
-      // capacity and is full).
 
     bool erase(const KeyType& key);
       // If key is equal to a key currently in the map, remove the key/value
@@ -77,7 +74,7 @@ class Map
       // Exchange the contents of this map with the other one.
     
     void dump() const;
-    // Printing LL for debugging purposes, writes to cerr
+    // Printing map for debugging purposes, writes to cerr
 
   private:
     struct Node
