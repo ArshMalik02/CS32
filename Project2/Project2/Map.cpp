@@ -195,6 +195,7 @@ bool Map::erase(const KeyType& key)
         head = toDelete->next;
         toDelete->next->prev = nullptr;
         delete toDelete;
+        m_size--;
         return true;
     }
     
@@ -207,6 +208,7 @@ bool Map::erase(const KeyType& key)
             p->next->prev = p->prev;
             p->prev->next = p->next;
             delete p;
+            m_size--;
             return true;
         }
     }
@@ -216,6 +218,7 @@ bool Map::erase(const KeyType& key)
     tail = p->prev;
     p->prev->next = nullptr;
     delete p;
+    m_size--;
     return true;
 }
 
