@@ -191,12 +191,24 @@ bool Map::erase(const KeyType& key)
     
     if (head->m_key == key)
     {
-        Node* toDelete = head;
-        head = toDelete->next;
-        toDelete->next->prev = nullptr;
-        delete toDelete;
-        m_size--;
-        return true;
+        if (head->next!=nullptr)
+        {
+            Node* toDelete = head;
+            head = toDelete->next;
+            toDelete->next->prev = nullptr;
+            delete toDelete;
+            m_size--;
+            return true;
+        }
+        else
+        {
+            Node* toDel = head;
+            head = nullptr;
+            tail = nullptr;
+            m_size--;
+            delete toDel;
+            return true;
+        }
     }
     
     // Deleting a node in the middle of the list
