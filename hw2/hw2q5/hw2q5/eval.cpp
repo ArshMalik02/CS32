@@ -304,9 +304,11 @@ bool checkPrecedence(char x, stack<char> &opStack)
         case '*':
             if (top == '*' || top == '/')
                 return true;
+            break;
         case '/':
             if (top == '*' || top == '/')
                 return true;
+            break;
         default:
             break;
         
