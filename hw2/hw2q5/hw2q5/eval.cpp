@@ -22,32 +22,33 @@ int main()
                 m.insert(vars[k], vals[k]);
             string pf;
             int answer;
-            assert(evaluate("a+ e", m, pf, answer) == 0  &&
-                                    pf == "ae+"  &&  answer == -6);
-            answer = 999;
-            assert(evaluate("", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("a+", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("a i", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("ai", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("()", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("()o", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("y(o+u)", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("y(*o)", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("a+E", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("(a+(i-o)", m, pf, answer) == 1  &&  answer == 999);
-              // unary operators not allowed:
-            assert(evaluate("-a", m, pf, answer) == 1  &&  answer == 999);
-            assert(evaluate("a*b", m, pf, answer) == 2  &&
-                                    pf == "ab*"  &&  answer == 999);
-            assert(evaluate("y +o *(   a-u)  ", m, pf, answer) == 0  &&
-                                    pf == "yoau-*+"  &&  answer == -1);
-            answer = 999;
-            assert(evaluate("o/(y-y)", m, pf, answer) == 3  &&
-                                    pf == "oyy-/"  &&  answer == 999);
-            assert(evaluate(" a  ", m, pf, answer) == 0  &&
-                                    pf == "a"  &&  answer == 3);
-            assert(evaluate("((a))", m, pf, answer) == 0  &&
-                                    pf == "a"  &&  answer == 3);
+    assert(evaluate("a+ e", m, pf, answer) == 0  &&
+                                        pf == "ae+"  &&  answer == -6);
+                answer = 999;
+                assert(evaluate("", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("a+", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("a i", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("ai", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("()", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("()o", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("y(o+u)", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("y(*o)", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("a+E", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("(a+(i-o)", m, pf, answer) == 1  &&  answer == 999);
+                  // unary operators not allowed:
+                assert(evaluate("-a", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("a*b", m, pf, answer) == 2  &&
+                                        pf == "ab*"  &&  answer == 999);
+                assert(evaluate("y +o *(   a-u)  ", m, pf, answer) == 0  &&
+                                        pf == "yoau-*+"  &&  answer == -1);
+                answer = 999;
+                assert(evaluate("o/(y-y)", m, pf, answer) == 3  &&
+                                        pf == "oyy-/"  &&  answer == 999);
+                assert(evaluate(" a  ", m, pf, answer) == 0  &&
+                                        pf == "a"  &&  answer == 3);
+                assert(evaluate("((a))", m, pf, answer) == 0  &&
+                                        pf == "a"  &&  answer == 3);
+    assert(evaluate("(a+o )* i)/((a / i)", m, pf, answer)==1);
             cout << "Passed all tests" << endl;
         }
 
@@ -64,6 +65,9 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
     {
         return 1;
     }
+    
+    if (checkMismatchedBrackets(infixNoSpace)==false)
+        return 1;
     
     for (int i = 0; i != infixNoSpace.size(); i++)
     {
@@ -156,7 +160,6 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
                     break;
                 }
             }
-            
             while (operators.top()!='(')
             {
                 pf += operators.top();
@@ -205,14 +208,15 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
             operators.push(ch);
         }
     }
+    
+    
     while (!operators.empty())
     {
         pf += operators.top();
         operators.pop();
     }
-    cerr << pf << endl;
     postfix = pf;
-    if (infixStatus==false || checkMismatchedBrackets(pf) == false)
+    if (infixStatus==false)
         return returnVal;
     
     for (int i = 0; i != postfix.size(); i++)
