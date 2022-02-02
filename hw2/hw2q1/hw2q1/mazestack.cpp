@@ -33,7 +33,7 @@ int main()
         "XXXXXXXXXX"
     };
     
-    if (pathExists(maze, 10,10, 4,6, 1,1))
+    if (pathExists(maze, 10,10, 1,6, 3,8))
         cout << "Solvable!" << endl;
     else
         cout << "Out of luck!" << endl;

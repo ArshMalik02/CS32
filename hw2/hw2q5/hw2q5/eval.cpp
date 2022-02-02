@@ -26,10 +26,10 @@ int main()
                                         pf == "ae+"  &&  answer == -6);
                 answer = 999;
                 assert(evaluate("", m, pf, answer) == 1  &&  answer == 999);
-                assert(evaluate("a+", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("a+(-a+e)(i+o)", m, pf, answer) == 1  &&  answer == 999);
                 assert(evaluate("a i", m, pf, answer) == 1  &&  answer == 999);
                 assert(evaluate("ai", m, pf, answer) == 1  &&  answer == 999);
-                assert(evaluate("()", m, pf, answer) == 1  &&  answer == 999);
+                assert(evaluate("a+()", m, pf, answer) == 1  &&  answer == 999);
                 assert(evaluate("()o", m, pf, answer) == 1  &&  answer == 999);
                 assert(evaluate("y(o+u)", m, pf, answer) == 1  &&  answer == 999);
                 assert(evaluate("y(*o)", m, pf, answer) == 1  &&  answer == 999);
@@ -61,7 +61,7 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
     bool infixStatus = true;
     int returnVal = 1;
     
-    if (infix == "")
+    if (infixNoSpace == "")
     {
         return 1;
     }
@@ -88,16 +88,7 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
             }
             else if (i!=0)
             {
-                if (isalpha(infixNoSpace[i-1]))
-                {
-                    returnVal = 1;
-                    infixStatus = false;
-                    break;
-                }
-            }
-            else if (i!=infixNoSpace.size()-1)
-            {
-                if (isalpha(infixNoSpace[i+1]))
+                if (isalpha(infixNoSpace[i-1]) || infixNoSpace[i-1] == ')')
                 {
                     returnVal = 1;
                     infixStatus = false;
@@ -120,16 +111,7 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
             
             else if (i!=0)
             {
-                if (isalpha(infixNoSpace[i-1]))
-                {
-                    returnVal = 1;
-                    infixStatus = false;
-                    break;
-                }
-            }
-            else if (i != infixNoSpace.size()-1)
-            {
-                if (isOperator(infixNoSpace[i+1]) || infixNoSpace[i+1] == ')')
+                if (isalpha(infixNoSpace[i-1]) || infixNoSpace[i-1] == ')')
                 {
                     returnVal = 1;
                     infixStatus = false;
@@ -144,22 +126,14 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
         {
             if (i!=0)
             {
-                if (isOperator(infixNoSpace[i-1]))
+                if (infixNoSpace[i-1] == '(' || isOperator(infixNoSpace[i-1]))
                 {
                     returnVal = 1;
                     infixStatus = false;
                     break;
                 }
             }
-            else if (i != infixNoSpace.size()-1)
-            {
-                if (isalpha(infixNoSpace[i+1]))
-                {
-                    returnVal = 1;
-                    infixStatus = false;
-                    break;
-                }
-            }
+            
             while (operators.top()!='(')
             {
                 pf += operators.top();
@@ -184,22 +158,14 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
             }
             else if (i!=0)
             {
-                if (isOperator(infixNoSpace[i-1]))
+                if (infixNoSpace[i-1] == '(' || isOperator(infixNoSpace[i-1]))
                 {
                     returnVal = 1;
                     infixStatus = false;
                     break;
                 }
             }
-            else if (i != infixNoSpace.size()-1)
-            {
-                if (isOperator(infixNoSpace[i+1]))
-                {
-                    returnVal = 1;
-                    infixStatus = false;
-                    break;
-                }
-            }
+            
             while (!operators.empty() && operators.top()!='(' && checkPrecedence(ch, operators))
             {
                 pf += operators.top();
@@ -209,13 +175,14 @@ int evaluate(string infix, const Map& values, string& postfix, int& result)
         }
     }
     
-    
     while (!operators.empty())
     {
         pf += operators.top();
         operators.pop();
     }
+    
     postfix = pf;
+    
     if (infixStatus==false)
         return returnVal;
     

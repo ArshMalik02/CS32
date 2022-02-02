@@ -3,18 +3,6 @@
 #include <string>
 using namespace std;
 
-void dump(string m[], int r, int c)
-{
-    for (int i = 0; i < r ; i++)
-    {
-        for (int j = 0; j < c; j++)
-        {
-            cerr<< m[i][j];
-        }
-        cerr << endl;
-    }
-}
-
 class Coord
 {
 public:
@@ -63,7 +51,7 @@ int main()
         "X.X..X...X",
         "X....XXX.X",
         "X.XXXX.X.X",
-        "X.....sXXX",
+        "X......XXX",
         "X.XX.X...X",
         "X.X..X.X.X",
         "X.X.XXXX.X",
