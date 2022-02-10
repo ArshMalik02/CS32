@@ -12,7 +12,7 @@ bool somePredicate(double x)
 // least one of the array elements, false otherwise.
 bool anyFalse(const double a[], int n)
 {
-    if (n==0)
+    if (n<=0)
         return false;
     return !somePredicate(a[n-1]) || anyFalse(a, n-1);
 }
@@ -21,7 +21,7 @@ bool anyFalse(const double a[], int n)
 // somePredicate function returns false.
 int countFalse(const double a[], int n)
 {
-    if (n==0)
+    if (n<=0)
         return 0;
     int front = (!somePredicate(a[0]))? 1:0;
     int back = countFalse(a+1, n-1);
@@ -82,8 +82,8 @@ bool contains(const double a1[], int n1, const double a2[], int n2)
         return true;
     if (n2>n1)
         return false;
-   if (a1[0] == a2[0])
-       return contains(a1+1, n1-1, a2+1, n2-1);
+    if (a1[0] == a2[0])
+        return contains(a1+1, n1-1, a2+1, n2-1);
     else
         return contains(a1+1, n1-1, a2, n2);
 }
