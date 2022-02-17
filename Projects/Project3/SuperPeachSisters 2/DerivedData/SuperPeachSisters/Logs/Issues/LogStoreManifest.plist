@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>15211D65-F7E3-4DB2-BF17-AF8DFFDCDD4F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>15211D65-F7E3-4DB2-BF17-AF8DFFDCDD4F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>SuperPeachSisters-fepzdxozafaxwzgqjregzonsbqgl</string>
+			<key>timeStartedRecording</key>
+			<real>666666866.14831901</real>
+			<key>timeStoppedRecording</key>
+			<real>666666866.91172099</real>
+			<key>title</key>
+			<string>Build target SuperPeachSisters</string>
+			<key>uniqueIdentifier</key>
+			<string>15211D65-F7E3-4DB2-BF17-AF8DFFDCDD4F</string>
+		</dict>
+		<key>1CE1CF46-AF2A-4D1E-AC4F-DB7D17495831</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>1CE1CF46-AF2A-4D1E-AC4F-DB7D17495831.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>SuperPeachSisters-eelwxekdptnewwdltcjnelboglke</string>
+			<key>timeStartedRecording</key>
+			<real>666757552.04826796</real>
+			<key>timeStoppedRecording</key>
+			<real>666757552.53543997</real>
+			<key>title</key>
+			<string>Build target SuperPeachSisters</string>
+			<key>uniqueIdentifier</key>
+			<string>1CE1CF46-AF2A-4D1E-AC4F-DB7D17495831</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

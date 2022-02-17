@@ -313,7 +313,6 @@ inline
 typename Map<KeyType, ValueType>::Node* Map<KeyType, ValueType>::findFirstAtLeast(const KeyType& key) const
 {
       // Do a linear search through the list
-
     Node* p;
     for (p = m_head->m_next; p != m_head && p->m_key < key; p = p->m_next)
         ;
@@ -326,7 +325,6 @@ bool Map<KeyType, ValueType>::doInsertOrUpdate(const KeyType& key, const ValueTy
                            bool mayInsert, bool mayUpdate)
 {
     Node* p = findFirstAtLeast(key);
-
     if (p != m_head  &&  p->m_key == key)  // found
     {
         if (mayUpdate)
