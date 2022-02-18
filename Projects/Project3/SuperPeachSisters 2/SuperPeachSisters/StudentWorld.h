@@ -26,13 +26,16 @@ class Actor;
 class StudentWorld : public GameWorld
 {
 public:
-  StudentWorld(std::string assetPath);
-  virtual int init();
-  virtual int move();
-  virtual void cleanUp();
-
+    StudentWorld(std::string assetPath);
+    ~StudentWorld();
+    bool isBlockingObject(int x, int y, Actor* &p);
+    virtual int init();
+    virtual int move();
+    virtual void cleanUp();
+    
 private:
     std::list<Actor*> objects;
+    Actor* m_peach;
 };
 
 #endif // STUDENTWORLD_H_

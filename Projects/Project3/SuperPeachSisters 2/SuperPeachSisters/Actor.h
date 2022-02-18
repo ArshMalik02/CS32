@@ -8,19 +8,32 @@
 class Actor : public GraphObject
 {
 public:
-    Actor(StudentWorld* p, int x, int y, int ID, int startDir, int depth, double size, bool lifeStatus);
+    Actor(StudentWorld* p, int x, int y, int ID, int startDir, int depth, double size, int healthStatus);
     virtual void doSomething() = 0;
+    virtual void bonk();
+    virtual bool canBlock();
+    // Accessors
+    int getHealth();
+    StudentWorld* getPtrToWorld();
 private:
     StudentWorld* m_world;
-    bool alive;
+    int health;
     bool hit;
 };
-
 
 class Block : public Actor
 {
 public:
     Block(StudentWorld* s, int x, int y);
+    virtual void doSomething();
+    virtual void bonk();
+    virtual bool canBlock();
+};
+
+class Peach : public Actor
+{
+public:
+    Peach(StudentWorld* s, int x, int y);
     virtual void doSomething();
 };
 

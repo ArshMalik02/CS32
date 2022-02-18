@@ -37,7 +37,7 @@ int StudentWorld::init()
                 switch (ge)
                 {
                     case Level::empty:
-                        cout << "Location 5,10 is empty" << endl;
+//                        cout << "Location 5,10 is empty" << endl;
                         break;
                     case Level::koopa:
                         cout << "Location 5,10 starts with a koopa" << endl;
@@ -47,6 +47,7 @@ int StudentWorld::init()
                         break;
                     case Level::peach:
                         cout << "Location 5,10 is where Peach starts" << endl;
+                        m_peach = new Peach(this, i*SPRITE_WIDTH, j*SPRITE_HEIGHT);
                         break;
                     case Level::flag:
                         cout << "Location 5,10 is where a flag is" << endl;
@@ -71,13 +72,47 @@ int StudentWorld::init()
 
 int StudentWorld::move()
 {
+    m_peach->doSomething();
     return GWSTATUS_CONTINUE_GAME;
 }
 
 void StudentWorld::cleanUp()
 {
+    // deleting peach
+    delete m_peach;
+    // deleting rest of the actors
     list<Actor*>::iterator it;
     it = objects.begin();
     while (it!=objects.end())
+    {
         delete *it;
+        it++;
+    }
+}
+
+bool StudentWorld::isBlockingObject(int x, int y, Actor* &p)
+{
+    // iterating through all the objects
+    list<Actor*>::iterator it;
+    it = objects.begin();
+    while (it!=objects.end())
+    {
+        if ((*it)->canBlock())
+        {
+            int coordX = (*it)->getX();
+            int coordY = (*it)->getY();
+            if ((x == coordX) && (y==coordY))
+            {
+                p = *it;
+                return true;
+            }
+        }
+        it++;
+    }
+    return false;
+}
+
+StudentWorld::~StudentWorld()
+{
+    cleanUp();
 }
