@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0D1337AE-69C3-40BC-8DD7-6B80EFB5191C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0D1337AE-69C3-40BC-8DD7-6B80EFB5191C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q3b project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q3b</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build hw4q3b</string>
+			<key>timeStartedRecording</key>
+			<real>666912561.67654502</real>
+			<key>timeStoppedRecording</key>
+			<real>666912561.74305403</real>
+			<key>title</key>
+			<string>Build hw4q3b</string>
+			<key>uniqueIdentifier</key>
+			<string>0D1337AE-69C3-40BC-8DD7-6B80EFB5191C</string>
+		</dict>
+		<key>6EA6D08E-2B93-4BFF-95B8-1CE47DB91B2A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6EA6D08E-2B93-4BFF-95B8-1CE47DB91B2A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q3b project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q3b</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build hw4q3b</string>
+			<key>timeStartedRecording</key>
+			<real>666912636.40751302</real>
+			<key>timeStoppedRecording</key>
+			<real>666912636.66835499</real>
+			<key>title</key>
+			<string>Build hw4q3b</string>
+			<key>uniqueIdentifier</key>
+			<string>6EA6D08E-2B93-4BFF-95B8-1CE47DB91B2A</string>
+		</dict>
+		<key>888750FA-EF6C-4A4A-9DF2-E51727BA1FDD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>888750FA-EF6C-4A4A-9DF2-E51727BA1FDD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q3b project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q3b</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build hw4q3b</string>
+			<key>timeStartedRecording</key>
+			<real>666912545.54705298</real>
+			<key>timeStoppedRecording</key>
+			<real>666912545.98449302</real>
+			<key>title</key>
+			<string>Build hw4q3b</string>
+			<key>uniqueIdentifier</key>
+			<string>888750FA-EF6C-4A4A-9DF2-E51727BA1FDD</string>
+		</dict>
+		<key>918F9817-5550-4E58-AB95-C3D54A7CD150</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>918F9817-5550-4E58-AB95-C3D54A7CD150.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q3b project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q3b</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build hw4q3b</string>
+			<key>timeStartedRecording</key>
+			<real>666912640.05920804</real>
+			<key>timeStoppedRecording</key>
+			<real>666912640.44655299</real>
+			<key>title</key>
+			<string>Build hw4q3b</string>
+			<key>uniqueIdentifier</key>
+			<string>918F9817-5550-4E58-AB95-C3D54A7CD150</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

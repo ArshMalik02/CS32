@@ -8,20 +8,7 @@
 
 class Actor;
 
-//// Students:  Add code to this file, StudentWorld.cpp, Actor.h, and Actor.cpp
-//class Twinkler;
-//
-//class StudentWorld : public GameWorld
-//{
-//public:
-//  StudentWorld(std::string assetPath);
-//  virtual int init();
-//  virtual int move();
-//  virtual void cleanUp();
-//
-//private:
-//  Twinkler* m_stella;
-//};
+// Students:  Add code to this file, StudentWorld.cpp, Actor.h, and Actor.cpp
 
 class StudentWorld : public GameWorld
 {

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>069027E2-F166-474E-96B2-622D957FA596</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>069027E2-F166-474E-96B2-622D957FA596.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q3c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q3c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build hw4q3c</string>
+			<key>timeStartedRecording</key>
+			<real>666913415.84103</real>
+			<key>timeStoppedRecording</key>
+			<real>666913416.24263597</real>
+			<key>title</key>
+			<string>Build hw4q3c</string>
+			<key>uniqueIdentifier</key>
+			<string>069027E2-F166-474E-96B2-622D957FA596</string>
+		</dict>
+		<key>540E59FC-039F-42AB-9BF9-BB3CBA3ABB63</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>540E59FC-039F-42AB-9BF9-BB3CBA3ABB63.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q3c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q3c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build hw4q3c</string>
+			<key>timeStartedRecording</key>
+			<real>666913247.80856299</real>
+			<key>timeStoppedRecording</key>
+			<real>666913248.262079</real>
+			<key>title</key>
+			<string>Build hw4q3c</string>
+			<key>uniqueIdentifier</key>
+			<string>540E59FC-039F-42AB-9BF9-BB3CBA3ABB63</string>
+		</dict>
+		<key>D5C0F183-608F-4C8B-9FFC-DF69E128920C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D5C0F183-608F-4C8B-9FFC-DF69E128920C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q3c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q3c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build hw4q3c</string>
+			<key>timeStartedRecording</key>
+			<real>666913378.43946505</real>
+			<key>timeStoppedRecording</key>
+			<real>666913378.47701705</real>
+			<key>title</key>
+			<string>Build hw4q3c</string>
+			<key>uniqueIdentifier</key>
+			<string>D5C0F183-608F-4C8B-9FFC-DF69E128920C</string>
+		</dict>
+		<key>E990A829-3351-407C-A746-0F82F2764070</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E990A829-3351-407C-A746-0F82F2764070.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q3c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q3c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build hw4q3c</string>
+			<key>timeStartedRecording</key>
+			<real>666913265.479231</real>
+			<key>timeStoppedRecording</key>
+			<real>666913265.54068995</real>
+			<key>title</key>
+			<string>Build hw4q3c</string>
+			<key>uniqueIdentifier</key>
+			<string>E990A829-3351-407C-A746-0F82F2764070</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

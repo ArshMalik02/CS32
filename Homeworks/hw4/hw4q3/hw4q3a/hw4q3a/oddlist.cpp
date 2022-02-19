@@ -11,6 +11,14 @@ using namespace std;
 // the same as in the original list.
 void removeOdd(list<int>& li)
 {
+    list<int>::iterator it;
+    for (it = li.begin(); it!=li.end(); it++)
+    {
+        if ((*it)%2!=0)
+        {
+            li.erase(it);
+        }
+    }
 }
 
 void test()
