@@ -53,13 +53,15 @@ int StudentWorld::init()
                         cout << "Location 5,10 is where a flag is" << endl;
                         break;
                     case Level::block:
-                        objects.push_back(new Block(this, i*SPRITE_WIDTH, j*SPRITE_HEIGHT));
+                        objects.push_front(new Block(this, i*SPRITE_WIDTH, j*SPRITE_HEIGHT));
                         cout << "Location 5,10 holds a regular block" << endl;
                         break;
                     case Level::star_goodie_block:
                         cout << "Location 5,10 has a star goodie block" << endl;
                         break;
-                        // etc…
+                    case  Level::pipe:
+                        objects.push_front(new Pipe(this, i*SPRITE_WIDTH, j*SPRITE_HEIGHT));
+                        break;
                 }
             }
             
@@ -101,10 +103,13 @@ bool StudentWorld::isBlockingObject(int x, int y, Actor* &p)
         {
             int coordX = (*it)->getX();
             int coordY = (*it)->getY();
-            if ((x == coordX) && (y==coordY))
+            if (((coordX<=x) && (x<=coordX+SPRITE_WIDTH-1)) || ((coordX>=x)&&(coordX<=x+SPRITE_WIDTH-1)))
             {
-                p = *it;
-                return true;
+                if (((coordY<=y) && (y<=coordY+SPRITE_HEIGHT-1)) || ((coordY>=y)&&(coordY<=y+SPRITE_HEIGHT-1)))
+                {
+                    p = *it;
+                    return true;
+                }
             }
         }
         it++;

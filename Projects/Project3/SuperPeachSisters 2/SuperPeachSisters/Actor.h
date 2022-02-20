@@ -21,13 +21,30 @@ private:
     bool hit;
 };
 
-class Block : public Actor
+class Object : public Actor
+{
+  public:
+    Object(StudentWorld* s, int x, int y, int idnum);
+    virtual void doSomething() = 0;
+    virtual void bonk() = 0;
+    bool cannotBeDamaged();
+    bool canBlock();
+};
+
+class Block : public Object
 {
 public:
     Block(StudentWorld* s, int x, int y);
     virtual void doSomething();
     virtual void bonk();
-    virtual bool canBlock();
+};
+
+class Pipe : public Object
+{
+public:
+    Pipe(StudentWorld* s, int x, int y);
+    virtual void doSomething();
+    virtual void bonk();
 };
 
 class Peach : public Actor
@@ -35,6 +52,9 @@ class Peach : public Actor
 public:
     Peach(StudentWorld* s, int x, int y);
     virtual void doSomething();
+private:
+    int remainingJumpDistance;
+    bool jumpInitiated;
 };
 
 
