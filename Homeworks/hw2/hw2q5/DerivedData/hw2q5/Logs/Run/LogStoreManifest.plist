@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>717A9DEF-CCE7-4948-AE79-E86D7100CC13</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>717A9DEF-CCE7-4948-AE79-E86D7100CC13.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw2q5 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw2q5</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw2q5</string>
+			<key>timeStartedRecording</key>
+			<real>667032397.50627196</real>
+			<key>timeStoppedRecording</key>
+			<real>667032407.87730503</real>
+			<key>title</key>
+			<string>Run hw2q5</string>
+			<key>uniqueIdentifier</key>
+			<string>717A9DEF-CCE7-4948-AE79-E86D7100CC13</string>
+		</dict>
+		<key>C316E6F2-F0B3-424C-BEB5-E25E1966608C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C316E6F2-F0B3-424C-BEB5-E25E1966608C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw2q5 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw2q5</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw2q5</string>
+			<key>timeStartedRecording</key>
+			<real>667032431.29710495</real>
+			<key>timeStoppedRecording</key>
+			<real>667032473.670735</real>
+			<key>title</key>
+			<string>Run hw2q5</string>
+			<key>uniqueIdentifier</key>
+			<string>C316E6F2-F0B3-424C-BEB5-E25E1966608C</string>
+		</dict>
+		<key>C670E304-3F96-43F0-AB22-1352B7920C9C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C670E304-3F96-43F0-AB22-1352B7920C9C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw2q5 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw2q5</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw2q5</string>
+			<key>timeStartedRecording</key>
+			<real>667032407.658481</real>
+			<key>timeStoppedRecording</key>
+			<real>667032431.10044801</real>
+			<key>title</key>
+			<string>Run hw2q5</string>
+			<key>uniqueIdentifier</key>
+			<string>C670E304-3F96-43F0-AB22-1352B7920C9C</string>
+		</dict>
+		<key>CB99F5DA-F448-4E93-8508-F300C501ACE2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CB99F5DA-F448-4E93-8508-F300C501ACE2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw2q5 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw2q5</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw2q5</string>
+			<key>timeStartedRecording</key>
+			<real>667032473.86938703</real>
+			<key>timeStoppedRecording</key>
+			<real>667032511.17220402</real>
+			<key>title</key>
+			<string>Run hw2q5</string>
+			<key>uniqueIdentifier</key>
+			<string>CB99F5DA-F448-4E93-8508-F300C501ACE2</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

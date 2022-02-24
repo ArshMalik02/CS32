@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>21D9935F-DC27-406D-8A19-D59E0E1ADDFB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>21D9935F-DC27-406D-8A19-D59E0E1ADDFB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2b project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2b</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build midterm2b</string>
+			<key>timeStartedRecording</key>
+			<real>667278371.67181897</real>
+			<key>timeStoppedRecording</key>
+			<real>667278372.02035499</real>
+			<key>title</key>
+			<string>Build midterm2b</string>
+			<key>uniqueIdentifier</key>
+			<string>21D9935F-DC27-406D-8A19-D59E0E1ADDFB</string>
+		</dict>
+		<key>4C3100E6-F2C2-4F16-9751-63D66B45FC68</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4C3100E6-F2C2-4F16-9751-63D66B45FC68.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2b project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2b</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build midterm2b</string>
+			<key>timeStartedRecording</key>
+			<real>667278991.58701396</real>
+			<key>timeStoppedRecording</key>
+			<real>667278991.93742001</real>
+			<key>title</key>
+			<string>Build midterm2b</string>
+			<key>uniqueIdentifier</key>
+			<string>4C3100E6-F2C2-4F16-9751-63D66B45FC68</string>
+		</dict>
+		<key>6A5D84D8-D914-438F-B2D8-5FA0C5F83D43</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6A5D84D8-D914-438F-B2D8-5FA0C5F83D43.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2b project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2b</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build midterm2b</string>
+			<key>timeStartedRecording</key>
+			<real>667278998.28910697</real>
+			<key>timeStoppedRecording</key>
+			<real>667278998.632653</real>
+			<key>title</key>
+			<string>Build midterm2b</string>
+			<key>uniqueIdentifier</key>
+			<string>6A5D84D8-D914-438F-B2D8-5FA0C5F83D43</string>
+		</dict>
+		<key>EC94048B-F66B-4E3F-9E94-554061C6B19B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EC94048B-F66B-4E3F-9E94-554061C6B19B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2b project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2b</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build midterm2b</string>
+			<key>timeStartedRecording</key>
+			<real>667278980.09015703</real>
+			<key>timeStoppedRecording</key>
+			<real>667278980.46119797</real>
+			<key>title</key>
+			<string>Build midterm2b</string>
+			<key>uniqueIdentifier</key>
+			<string>EC94048B-F66B-4E3F-9E94-554061C6B19B</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

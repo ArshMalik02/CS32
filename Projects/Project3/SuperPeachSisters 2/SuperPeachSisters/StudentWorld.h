@@ -16,6 +16,9 @@ public:
     StudentWorld(std::string assetPath);
     ~StudentWorld();
     bool isBlockingObject(int x, int y, Actor* &p);
+    bool enemyOverlap(int x, int y, Actor* &p);
+    Actor* getPeach();
+    void changeLevelStatus(bool x);
     virtual int init();
     virtual int move();
     virtual void cleanUp();
@@ -23,6 +26,8 @@ public:
 private:
     std::list<Actor*> objects;
     Actor* m_peach;
+    bool gameStatus;
+    bool nextLevel;
 };
 
 #endif // STUDENTWORLD_H_

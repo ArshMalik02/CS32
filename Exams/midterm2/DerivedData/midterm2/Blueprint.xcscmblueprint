@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AE33E56771ADD9CF5349323025687EE2E1D0F018",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AE33E56771ADD9CF5349323025687EE2E1D0F018" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AA6D95A3-C4A7-4A98-91F1-3397991D6A2C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AE33E56771ADD9CF5349323025687EE2E1D0F018" : "CS32-Projects\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "midterm2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Exams\/midterm2\/midterm2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ArshMalik02\/CS32.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE33E56771ADD9CF5349323025687EE2E1D0F018"
+    }
+  ]
+}
