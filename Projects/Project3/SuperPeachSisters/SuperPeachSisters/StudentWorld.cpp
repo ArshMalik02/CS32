@@ -281,6 +281,5 @@ bool StudentWorld::peachOverlap(int x, int y, Actor* &p)
 
 StudentWorld::~StudentWorld()
 {
-    if (levelStatus)
-        cleanUp();
+    cleanUp();
 }
