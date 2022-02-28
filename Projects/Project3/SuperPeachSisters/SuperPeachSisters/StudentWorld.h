@@ -23,6 +23,7 @@ public:
     bool koopagoombaoverlap(int x, int y, Actor* &p);
     Peach* getPeach();
     void changeLevelStatus(bool x);
+    void changeGameStatus(bool x);
     virtual int init();
     virtual int move();
     virtual void cleanUp();
@@ -31,7 +32,7 @@ private:
     std::list<Actor*> objects;
     Peach* m_peach;
     bool gameStatus;
-    bool nextLevel;
+    bool levelStatus;
 };
 
 #endif // STUDENTWORLD_H_

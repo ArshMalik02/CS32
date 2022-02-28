@@ -14,15 +14,19 @@ GameWorld* createStudentWorld(string assetPath)
 }
 
 StudentWorld::StudentWorld(string assetPath)
-: GameWorld(assetPath), gameStatus(false), nextLevel(false)
+: GameWorld(assetPath), gameStatus(false), levelStatus(false)
 {
 }
 
 void StudentWorld::changeLevelStatus(bool x)
 {
-    gameStatus = x;
+    levelStatus = x;
 }
 
+void StudentWorld::changeGameStatus(bool x)
+{
+    gameStatus = x;
+}
 void StudentWorld::addActor(Actor* p)
 {
     objects.push_back(p);
@@ -41,14 +45,14 @@ int StudentWorld::init()
     if (result == Level::load_fail_file_not_found)
     {
         cerr << "Could not find level01.txt data file" << endl;
-        gameStatus = false;
+        levelStatus = false;
         return GWSTATUS_LEVEL_ERROR;
     }
     
     else if (result == Level::load_fail_bad_format)
     {
         cerr << "level01.txt is improperly formatted" << endl;
-        gameStatus = false;
+        levelStatus = false;
         return GWSTATUS_LEVEL_ERROR;
     }
     else if (result == Level::load_success)
@@ -63,7 +67,6 @@ int StudentWorld::init()
                 switch (ge)
                 {
                     case Level::empty:
-//                        cout << "Location 5,10 is empty" << endl;
                         break;
                     case Level::koopa:
                         cout << "Location "<<i<<","<<j<<" starts with a koopa" << endl;
@@ -97,8 +100,18 @@ int StudentWorld::init()
                         objects.push_front(new Pipe(this, i*SPRITE_WIDTH, j*SPRITE_HEIGHT));
                         break;
                     case Level::flag:
-                        objects.push_front(new Flag(this, 10*SPRITE_WIDTH, 2*SPRITE_HEIGHT));
+                        objects.push_front(new Flag(this, i*SPRITE_WIDTH, j*SPRITE_HEIGHT));
                         cout << "Location "<<i<<","<<j<<" is where a flag is" << endl;
+                        break;
+                    case Level::piranha:
+                        objects.push_front(new Piranha(this, i*SPRITE_WIDTH, j*SPRITE_HEIGHT));
+                        cout << "Location "<<i<<","<<j<<" is where a Piranha is" << endl;
+                        break;
+                    case Level::mario:
+                        objects.push_front(new Mario(this, i*SPRITE_WIDTH, j*SPRITE_HEIGHT));
+                        cout << "Location "<<i<<","<<j<<" is where a mario is" << endl;
+                        break;
+                    default:
                         break;
                 }
             }
@@ -121,15 +134,20 @@ int StudentWorld::move()
         if ((*it)->getHealth()!=0)
         {
             (*it)->doSomething();
-            if ((m_peach->getHealth() == 0 && gameStatus==false)|| getLives()==0)
+            if (getLives() == 0 || (m_peach->getHealth() == 0 && levelStatus==false && gameStatus==false))
             {
                 playSound(SOUND_PLAYER_DIE);
                 return GWSTATUS_PLAYER_DIED;
             }
-            if (gameStatus)
+            if (levelStatus)
             {
                 playSound(SOUND_FINISHED_LEVEL);
                 return GWSTATUS_FINISHED_LEVEL;
+            }
+            if (gameStatus)
+            {
+                playSound(SOUND_GAME_OVER);
+                return GWSTATUS_PLAYER_WON;
             }
         }
         it++;
@@ -150,6 +168,28 @@ int StudentWorld::move()
         else
             t++;
     }
+    // DISPLAYING GAME STATS
+    int curLives = getLives();
+    int curScore = getScore();
+    int curLevel = getLevel();
+    string display = "";
+    ostringstream oss1;
+    ostringstream ossLives;
+    ossLives << curLives;
+    ostringstream ossScore;
+    ossScore << "  Points: " << curScore << " ";
+    oss1.fill('0');
+    oss1 << "  Level: " << setw(2) << curLevel;
+    display+= ("Lives: " + ossLives.str() + oss1.str() + ossScore.str());
+    
+    if (m_peach->getStarPowerStatus())
+        display+= " StarPower!";
+    if (m_peach->getJumpPowerStatus())
+        display += " JumpPower!";
+    if (m_peach->getShootPowerStatus())
+        display += " ShootPower!";
+    
+    setGameStatText(display);
     return GWSTATUS_CONTINUE_GAME;
 }
 
@@ -241,6 +281,6 @@ bool StudentWorld::peachOverlap(int x, int y, Actor* &p)
 
 StudentWorld::~StudentWorld()
 {
-    if (gameStatus)
+    if (levelStatus)
         cleanUp();
 }

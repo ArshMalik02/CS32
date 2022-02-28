@@ -11,6 +11,7 @@ class Actor : public GraphObject
 public:
     Actor(StudentWorld* p, int x, int y, int ID, int startDir, int depth, double size, int healthStatus);
     virtual ~Actor();
+    virtual void addShell();
     virtual void doSomething() = 0;
     virtual void bonk();
     virtual bool canBlock();
@@ -43,6 +44,21 @@ public:
     Projectile(StudentWorld* s, int x, int y, int idnum, int dir);
     virtual void doSomething() = 0;
     virtual void bonk();
+    void doSomethingCommon(StudentWorld* &ptrToWorld, int curX, int curY);
+};
+
+class piranhaFireball : public Projectile
+{
+public:
+    piranhaFireball(StudentWorld* s, int x, int y, int dir);
+    virtual void doSomething();
+};
+
+class Shell : public Projectile
+{
+public:
+    Shell(StudentWorld* s, int x, int y, int peachDir);
+    virtual void doSomething();
 };
 
 class Fireball : public Projectile
@@ -77,21 +93,60 @@ class Enemy : public Actor
 {
 public:
     Enemy(StudentWorld* s, int x, int y, int idnum, int d, double size);
-    void doSomething();
+    void moveEnemy();
+    bool checkPeachOverlap();
+    virtual void doSomething() = 0;
     bool canBlock();
     virtual bool isDamageable();
+    virtual void addShell();
+};
+
+class Piranha : public Enemy
+{
+public:
+    Piranha(StudentWorld* s, int x, int y);
+    virtual void doSomething();
+private:
+    int firingDelay;
 };
 
 class Goomba : public Enemy
 {
 public:
     Goomba(StudentWorld* s, int x, int y);
+    virtual void doSomething();
 };
 
 class Koopa : public Enemy
 {
 public:
     Koopa(StudentWorld* s, int x, int y);
+    virtual void doSomething();
+    virtual void addShell();
+};
+
+class LevelEnder : public Actor
+{
+public:
+    LevelEnder(StudentWorld* s, int x, int y, int idnum);
+    virtual void doSomething() = 0;
+    virtual bool canBlock();
+    virtual void bonk();
+    bool possiblePeachOverlap();
+};
+
+class Mario : public LevelEnder
+{
+public:
+    Mario(StudentWorld*s , int x, int y);
+    virtual void doSomething();
+};
+
+class Flag : public LevelEnder
+{
+public:
+    Flag(StudentWorld*s , int x, int y);
+    virtual void doSomething();
 };
 
 class Object : public Actor
@@ -102,15 +157,6 @@ class Object : public Actor
     virtual void bonk() = 0;
     bool cannotBeDamaged();
     virtual bool canBlock();
-};
-
-class Flag : public Object
-{
-public:
-    Flag(StudentWorld*s , int x, int y);
-    virtual void doSomething();
-    virtual bool canBlock();
-    virtual void bonk();
 };
 
 class Block : public Object
@@ -141,6 +187,8 @@ public:
     bool fireballPowerStatus();
     int getRechargeTime();
     bool getStarPowerStatus();
+    bool getJumpPowerStatus();
+    bool getShootPowerStatus();
     void setStarPowerTime(int time);
     void setRechargeTime(int t);
     void setDead();
