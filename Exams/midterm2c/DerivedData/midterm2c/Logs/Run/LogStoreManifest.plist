@@ -5,6 +5,279 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>053C60F1-DDC4-40A1-8A65-64C2F8CBAC3E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>053C60F1-DDC4-40A1-8A65-64C2F8CBAC3E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run midterm2c</string>
+			<key>timeStartedRecording</key>
+			<real>667280538.31276298</real>
+			<key>timeStoppedRecording</key>
+			<real>667280540.46096098</real>
+			<key>title</key>
+			<string>Run midterm2c</string>
+			<key>uniqueIdentifier</key>
+			<string>053C60F1-DDC4-40A1-8A65-64C2F8CBAC3E</string>
+		</dict>
+		<key>5258E3F2-787E-45F4-8C8F-A7F9D13594D4</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5258E3F2-787E-45F4-8C8F-A7F9D13594D4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run midterm2c</string>
+			<key>timeStartedRecording</key>
+			<real>667281313.42105699</real>
+			<key>timeStoppedRecording</key>
+			<real>667281322.60808802</real>
+			<key>title</key>
+			<string>Run midterm2c</string>
+			<key>uniqueIdentifier</key>
+			<string>5258E3F2-787E-45F4-8C8F-A7F9D13594D4</string>
+		</dict>
+		<key>87912F50-AB24-4BC9-A559-DC148C6A47AB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>87912F50-AB24-4BC9-A559-DC148C6A47AB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run midterm2c</string>
+			<key>timeStartedRecording</key>
+			<real>667280542.90757596</real>
+			<key>timeStoppedRecording</key>
+			<real>667280608.16692495</real>
+			<key>title</key>
+			<string>Run midterm2c</string>
+			<key>uniqueIdentifier</key>
+			<string>87912F50-AB24-4BC9-A559-DC148C6A47AB</string>
+		</dict>
+		<key>886D40FE-7785-4F19-8C97-CC97063CB9D5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>886D40FE-7785-4F19-8C97-CC97063CB9D5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run midterm2c</string>
+			<key>timeStartedRecording</key>
+			<real>667281093.55964196</real>
+			<key>timeStoppedRecording</key>
+			<real>667281313.22877395</real>
+			<key>title</key>
+			<string>Run midterm2c</string>
+			<key>uniqueIdentifier</key>
+			<string>886D40FE-7785-4F19-8C97-CC97063CB9D5</string>
+		</dict>
+		<key>9F09D35D-0FC4-4CC5-9375-83A92F074527</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>9F09D35D-0FC4-4CC5-9375-83A92F074527.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run midterm2c</string>
+			<key>timeStartedRecording</key>
+			<real>667280510.32506096</real>
+			<key>timeStoppedRecording</key>
+			<real>667280538.16580904</real>
+			<key>title</key>
+			<string>Run midterm2c</string>
+			<key>uniqueIdentifier</key>
+			<string>9F09D35D-0FC4-4CC5-9375-83A92F074527</string>
+		</dict>
+		<key>AFA4EA75-493F-4EF6-B94E-DCC37AA06D3D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>AFA4EA75-493F-4EF6-B94E-DCC37AA06D3D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run midterm2c</string>
+			<key>timeStartedRecording</key>
+			<real>667279953.78331494</real>
+			<key>timeStoppedRecording</key>
+			<real>667280474.72223699</real>
+			<key>title</key>
+			<string>Run midterm2c</string>
+			<key>uniqueIdentifier</key>
+			<string>AFA4EA75-493F-4EF6-B94E-DCC37AA06D3D</string>
+		</dict>
+		<key>E62123F3-3A37-44E6-9FB7-D0DD34BB98A8</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E62123F3-3A37-44E6-9FB7-D0DD34BB98A8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run midterm2c</string>
+			<key>timeStartedRecording</key>
+			<real>667280622.158445</real>
+			<key>timeStoppedRecording</key>
+			<real>667280938.20110595</real>
+			<key>title</key>
+			<string>Run midterm2c</string>
+			<key>uniqueIdentifier</key>
+			<string>E62123F3-3A37-44E6-9FB7-D0DD34BB98A8</string>
+		</dict>
+		<key>FD78EAB1-E7B7-44DF-846F-E18CD2A49B10</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FD78EAB1-E7B7-44DF-846F-E18CD2A49B10.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>midterm2c project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>midterm2c</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run midterm2c</string>
+			<key>timeStartedRecording</key>
+			<real>667281076.063182</real>
+			<key>timeStoppedRecording</key>
+			<real>667281076.91064</real>
+			<key>title</key>
+			<string>Run midterm2c</string>
+			<key>uniqueIdentifier</key>
+			<string>FD78EAB1-E7B7-44DF-846F-E18CD2A49B10</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

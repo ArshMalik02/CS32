@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>02578559-76AD-48C4-A017-A9B0316B0232</key>
+		<key>C2729A9B-474E-4FEA-AC7E-D729B3A4E908</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>02578559-76AD-48C4-A017-A9B0316B0232.xcactivitylog</string>
+			<string>C2729A9B-474E-4FEA-AC7E-D729B3A4E908.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,47 +32,13 @@
 			<key>signature</key>
 			<string>Run hw4q3d</string>
 			<key>timeStartedRecording</key>
-			<real>666913769.26973104</real>
+			<real>667884131.709993</real>
 			<key>timeStoppedRecording</key>
-			<real>666913775.38691199</real>
+			<real>667884134.29527903</real>
 			<key>title</key>
 			<string>Run hw4q3d</string>
 			<key>uniqueIdentifier</key>
-			<string>02578559-76AD-48C4-A017-A9B0316B0232</string>
-		</dict>
-		<key>FAB21E34-C1BF-45F8-8909-D9BEB2BC23C1</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>FAB21E34-C1BF-45F8-8909-D9BEB2BC23C1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>hw4q3d project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>hw4q3d</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run hw4q3d</string>
-			<key>timeStartedRecording</key>
-			<real>666913780.08879304</real>
-			<key>timeStoppedRecording</key>
-			<real>666913781.090379</real>
-			<key>title</key>
-			<string>Run hw4q3d</string>
-			<key>uniqueIdentifier</key>
-			<string>FAB21E34-C1BF-45F8-8909-D9BEB2BC23C1</string>
+			<string>C2729A9B-474E-4FEA-AC7E-D729B3A4E908</string>
 		</dict>
 	</dict>
 </dict>

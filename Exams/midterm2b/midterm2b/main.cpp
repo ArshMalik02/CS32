@@ -9,7 +9,10 @@ int productHelper(int a, int b, int countb, int total)
 {
     if (countb==0)
         return total;
-    return productHelper(a, b, countb-1, total+a);
+    if (b>0)
+        return productHelper(a, b, countb-1, total+a);
+    else
+        return productHelper(a, b, countb+1, total-a);
 }
 int product(int a, int b)
 {
@@ -25,6 +28,6 @@ int main()
 {
     assert(product(7, 5) == 35);
     assert(product(-4, 8) == -32);
-    assert(product(2, 6) == 12);
+    assert(product(2, -6) == -12);
     cout << "All tests succeeded" << endl;
 }

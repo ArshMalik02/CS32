@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>5C60B1FB-497E-4E2A-9172-7A23CA48DB6C</key>
+		<key>5EF771EA-D9A1-415D-8F3F-1B0B173FF0D8</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>5C60B1FB-497E-4E2A-9172-7A23CA48DB6C.xcactivitylog</string>
+			<string>5EF771EA-D9A1-415D-8F3F-1B0B173FF0D8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Run hw4q3c</string>
 			<key>timeStartedRecording</key>
-			<real>666913265.54181004</real>
+			<real>667890747.65569603</real>
 			<key>timeStoppedRecording</key>
-			<real>666913376.242311</real>
+			<real>667890751.91311705</real>
 			<key>title</key>
 			<string>Run hw4q3c</string>
 			<key>uniqueIdentifier</key>
-			<string>5C60B1FB-497E-4E2A-9172-7A23CA48DB6C</string>
+			<string>5EF771EA-D9A1-415D-8F3F-1B0B173FF0D8</string>
 		</dict>
-		<key>8BB13E50-8C1B-4E34-BC45-D8B828BF0F51</key>
+		<key>A796F731-67F5-4A9E-8836-90C2CFB28F57</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>8BB13E50-8C1B-4E34-BC45-D8B828BF0F51.xcactivitylog</string>
+			<string>A796F731-67F5-4A9E-8836-90C2CFB28F57.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,81 +66,13 @@
 			<key>signature</key>
 			<string>Run hw4q3c</string>
 			<key>timeStartedRecording</key>
-			<real>666913416.24371898</real>
+			<real>667885420.81098199</real>
 			<key>timeStoppedRecording</key>
-			<real>666913425.00339997</real>
+			<real>667885425.29994297</real>
 			<key>title</key>
 			<string>Run hw4q3c</string>
 			<key>uniqueIdentifier</key>
-			<string>8BB13E50-8C1B-4E34-BC45-D8B828BF0F51</string>
-		</dict>
-		<key>BBC652FA-8DAB-4D58-BC0B-829AFAA53E1D</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>BBC652FA-8DAB-4D58-BC0B-829AFAA53E1D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>hw4q3c project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>hw4q3c</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run hw4q3c</string>
-			<key>timeStartedRecording</key>
-			<real>666913248.26318002</real>
-			<key>timeStoppedRecording</key>
-			<real>666913265.72168005</real>
-			<key>title</key>
-			<string>Run hw4q3c</string>
-			<key>uniqueIdentifier</key>
-			<string>BBC652FA-8DAB-4D58-BC0B-829AFAA53E1D</string>
-		</dict>
-		<key>DF25E557-D0CC-482E-B398-D30E5C3FD43B</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>DF25E557-D0CC-482E-B398-D30E5C3FD43B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>hw4q3c project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>hw4q3c</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run hw4q3c</string>
-			<key>timeStartedRecording</key>
-			<real>666913378.47860599</real>
-			<key>timeStoppedRecording</key>
-			<real>666913394.01913702</real>
-			<key>title</key>
-			<string>Run hw4q3c</string>
-			<key>uniqueIdentifier</key>
-			<string>DF25E557-D0CC-482E-B398-D30E5C3FD43B</string>
+			<string>A796F731-67F5-4A9E-8836-90C2CFB28F57</string>
 		</dict>
 	</dict>
 </dict>

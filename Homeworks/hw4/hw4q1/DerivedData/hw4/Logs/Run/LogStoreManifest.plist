@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>6D32FAD6-D966-40BB-95C7-054620C80953</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6D32FAD6-D966-40BB-95C7-054620C80953.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw4</string>
+			<key>timeStartedRecording</key>
+			<real>667883298.94090998</real>
+			<key>timeStoppedRecording</key>
+			<real>667883308.00146997</real>
+			<key>title</key>
+			<string>Run hw4</string>
+			<key>uniqueIdentifier</key>
+			<string>6D32FAD6-D966-40BB-95C7-054620C80953</string>
+		</dict>
+		<key>8612B254-0738-4869-B343-CB3E4F737DDE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8612B254-0738-4869-B343-CB3E4F737DDE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw4</string>
+			<key>timeStartedRecording</key>
+			<real>667883327.94149804</real>
+			<key>timeStoppedRecording</key>
+			<real>667883328.92802894</real>
+			<key>title</key>
+			<string>Run hw4</string>
+			<key>uniqueIdentifier</key>
+			<string>8612B254-0738-4869-B343-CB3E4F737DDE</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

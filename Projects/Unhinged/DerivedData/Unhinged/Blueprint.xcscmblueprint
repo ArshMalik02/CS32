@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AE33E56771ADD9CF5349323025687EE2E1D0F018",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AE33E56771ADD9CF5349323025687EE2E1D0F018" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6F8254AD-0F5B-479E-AABA-B0773C349856",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AE33E56771ADD9CF5349323025687EE2E1D0F018" : "CS32-Projects\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Unhinged",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Projects\/Unhinged\/Unhinged.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ArshMalik02\/CS32.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE33E56771ADD9CF5349323025687EE2E1D0F018"
+    }
+  ]
+}

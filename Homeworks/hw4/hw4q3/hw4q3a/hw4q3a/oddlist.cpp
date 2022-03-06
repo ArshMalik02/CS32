@@ -16,7 +16,7 @@ void removeOdd(list<int>& li)
     {
         if ((*it)%2!=0)
         {
-            li.erase(it);
+            it = li.erase(it);
         }
     }
 }

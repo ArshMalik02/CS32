@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>99BCBDBA-7760-4F39-86E7-6105117F40DC</key>
+		<key>3900E28F-7F99-406C-8035-7FC3C879E160</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>99BCBDBA-7760-4F39-86E7-6105117F40DC.xcactivitylog</string>
+			<string>3900E28F-7F99-406C-8035-7FC3C879E160.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,47 +32,13 @@
 			<key>signature</key>
 			<string>Build hw4q3d</string>
 			<key>timeStartedRecording</key>
-			<real>666913780.05126595</real>
+			<real>667884131.32493198</real>
 			<key>timeStoppedRecording</key>
-			<real>666913780.08709002</real>
+			<real>667884131.70915699</real>
 			<key>title</key>
 			<string>Build hw4q3d</string>
 			<key>uniqueIdentifier</key>
-			<string>99BCBDBA-7760-4F39-86E7-6105117F40DC</string>
-		</dict>
-		<key>9E94963A-FE81-41AD-BCA2-FB66B4CEB011</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>9E94963A-FE81-41AD-BCA2-FB66B4CEB011.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>hw4q3d project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>hw4q3d</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build hw4q3d</string>
-			<key>timeStartedRecording</key>
-			<real>666913768.84170496</real>
-			<key>timeStoppedRecording</key>
-			<real>666913769.268471</real>
-			<key>title</key>
-			<string>Build hw4q3d</string>
-			<key>uniqueIdentifier</key>
-			<string>9E94963A-FE81-41AD-BCA2-FB66B4CEB011</string>
+			<string>3900E28F-7F99-406C-8035-7FC3C879E160</string>
 		</dict>
 	</dict>
 </dict>

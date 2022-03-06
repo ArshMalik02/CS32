@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>33467EA1-A0B1-44B8-821D-C9CDA181CD73</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>33467EA1-A0B1-44B8-821D-C9CDA181CD73.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q4 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q4</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw4q4</string>
+			<key>timeStartedRecording</key>
+			<real>667791189.30772102</real>
+			<key>timeStoppedRecording</key>
+			<real>667791190.29392397</real>
+			<key>title</key>
+			<string>Run hw4q4</string>
+			<key>uniqueIdentifier</key>
+			<string>33467EA1-A0B1-44B8-821D-C9CDA181CD73</string>
+		</dict>
+		<key>64F96FB1-8E0C-4F2A-AC81-A5534986C864</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>64F96FB1-8E0C-4F2A-AC81-A5534986C864.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q4 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q4</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw4q4</string>
+			<key>timeStartedRecording</key>
+			<real>667791456.62676799</real>
+			<key>timeStoppedRecording</key>
+			<real>667791457.601753</real>
+			<key>title</key>
+			<string>Run hw4q4</string>
+			<key>uniqueIdentifier</key>
+			<string>64F96FB1-8E0C-4F2A-AC81-A5534986C864</string>
+		</dict>
+		<key>77FEAED6-6ADB-4C59-B2B0-8B864AFF7D41</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>77FEAED6-6ADB-4C59-B2B0-8B864AFF7D41.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q4 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q4</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw4q4</string>
+			<key>timeStartedRecording</key>
+			<real>667791202.92195296</real>
+			<key>timeStoppedRecording</key>
+			<real>667791203.90794301</real>
+			<key>title</key>
+			<string>Run hw4q4</string>
+			<key>uniqueIdentifier</key>
+			<string>77FEAED6-6ADB-4C59-B2B0-8B864AFF7D41</string>
+		</dict>
+		<key>79960B0C-13F7-4924-B6D5-AA90EE58090D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>79960B0C-13F7-4924-B6D5-AA90EE58090D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q4 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q4</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw4q4</string>
+			<key>timeStartedRecording</key>
+			<real>667791117.83015895</real>
+			<key>timeStoppedRecording</key>
+			<real>667791123.62413204</real>
+			<key>title</key>
+			<string>Run hw4q4</string>
+			<key>uniqueIdentifier</key>
+			<string>79960B0C-13F7-4924-B6D5-AA90EE58090D</string>
+		</dict>
+		<key>936673E0-B16A-4036-8316-658C083B03ED</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>936673E0-B16A-4036-8316-658C083B03ED.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q4 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q4</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw4q4</string>
+			<key>timeStartedRecording</key>
+			<real>667791326.91418302</real>
+			<key>timeStoppedRecording</key>
+			<real>667791327.86894596</real>
+			<key>title</key>
+			<string>Run hw4q4</string>
+			<key>uniqueIdentifier</key>
+			<string>936673E0-B16A-4036-8316-658C083B03ED</string>
+		</dict>
+		<key>FD426F39-0F41-4F32-B29F-0A4B5816DEFA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FD426F39-0F41-4F32-B29F-0A4B5816DEFA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>hw4q4 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>hw4q4</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run hw4q4</string>
+			<key>timeStartedRecording</key>
+			<real>667791522.16968405</real>
+			<key>timeStoppedRecording</key>
+			<real>667791523.15467894</real>
+			<key>title</key>
+			<string>Run hw4q4</string>
+			<key>uniqueIdentifier</key>
+			<string>FD426F39-0F41-4F32-B29F-0A4B5816DEFA</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
