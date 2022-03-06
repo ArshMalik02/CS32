@@ -1,0 +1,58 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "d991680f38eb51a6729c89c9cf5e18acd2f43f1afc4fcfa94d5f44ca4c2f0b28"
+    }
+  ],
+  "containerPath" : "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx11.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/DerivedData/Unhinged/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/DerivedData/Unhinged/Build/Products",
+      "derivedDataPath" : "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/DerivedData/Unhinged/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/DerivedData/Unhinged/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/DerivedData/Unhinged/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
