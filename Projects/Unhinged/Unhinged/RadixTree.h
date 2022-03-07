@@ -19,13 +19,16 @@ public:
     void insert(std::string key, const ValueType& value);
     ValueType* search(std::string key) const;
 private:
-    std::map<std::string, ValueType*> rt;
+    std::map<std::string, ValueType> rt;
+    std::map<std::string, ValueType>* rtPTR;
 };
 
 template <typename ValueType>
 inline
 RadixTree<ValueType>::RadixTree()
-{}
+{
+    rtPTR = &rt;
+}
 
 template <typename ValueType>
 inline
@@ -36,19 +39,19 @@ template <typename ValueType>
 inline
 void RadixTree<ValueType>::insert(std::string key, const ValueType& value)
 {
-    *(rt[key]) = value;
+    rt[key] = value;
 }
 
 template <typename ValueType>
 inline
 ValueType* RadixTree<ValueType>::search(std::string key) const
 {
-    typename std::map<std::string, ValueType*>::const_iterator it;
-    it = rt.find(key);
-    if  (it == rt.end())
+    typename std::map<std::string, ValueType>::iterator it;
+    it = rtPTR->find(key);
+    if  (it == rtPTR->end())
     {
         return nullptr;
     }
-    return it->second;
+    return &(it->second);
 }
 #endif /* RadixTree_h */

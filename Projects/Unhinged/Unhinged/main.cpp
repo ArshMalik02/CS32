@@ -1,6 +1,30 @@
 #include "RadixTree.h"
 #include "PersonProfile.h"
-int main(){}
+#include "provided.h"
+#include "MemberDatabase.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    MemberDatabase mdb;
+    mdb.LoadDatabase("/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/members.txt");
+    const PersonProfile* ptr = mdb.GetMemberByEmail("AbFow2483@charter.net");
+    if (ptr != nullptr)
+        std::cout << "Found info for member: " << ptr->GetName() << std::endl;
+    else
+        std::cout << "No member has address " << "AbFow2483@charter.net" << std::endl;
+//    RadixTree<AttValPair> rt;
+//    AttValPair a1("hobby", "cricket");
+//    AttValPair b1("hobby", "football");
+//    AttValPair a2("age", "4");
+//    rt.insert(a1.attribute, a1);
+//    rt.insert(a2.attribute, a2);
+//    rt.insert(b1.attribute, b1);
+//    AttValPair* ptr = rt.search("hobby");
+//    cerr << ptr->value << endl;
+//    cerr << ptr->value << endl;
+}
 ////main.cpp
 //
 
