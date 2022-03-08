@@ -3,17 +3,30 @@
 #include "provided.h"
 #include "MemberDatabase.h"
 #include <iostream>
+#include "AttributeTranslator.h"
 using namespace std;
 
 int main()
 {
+//    AttributeTranslator ab;
+//    ab.Load("/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/translator.txt");
+//    vector<AttValPair> test;
+//    AttValPair source("trait","transparent");
+//    test = ab.FindCompatibleAttValPairs(source);
+//    for (int i = 0; i!= test.size(); i++)
+//    {
+//        cerr << test[i].attribute << endl;
+//        cerr << test[i].value << endl;
+//    }
     MemberDatabase mdb;
     mdb.LoadDatabase("/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/members.txt");
-    const PersonProfile* ptr = mdb.GetMemberByEmail("AbFow2483@charter.net");
-    if (ptr != nullptr)
-        std::cout << "Found info for member: " << ptr->GetName() << std::endl;
-    else
-        std::cout << "No member has address " << "AbFow2483@charter.net" << std::endl;
+    AttValPair prof("job","accountant");
+    vector<string> emails = mdb.FindMatchingMembers(prof);
+    cerr << "--------------------------" << endl;
+    for (int i = 0; i!=emails.size(); i++)
+    {
+        cerr << emails[i] << endl;
+    }
 //    RadixTree<AttValPair> rt;
 //    AttValPair a1("hobby", "cricket");
 //    AttValPair b1("hobby", "football");

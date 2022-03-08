@@ -25,6 +25,7 @@ public:
     const PersonProfile* GetMemberByEmail(std::string email) const;
 private:
     RadixTree<PersonProfile*> db;
+    RadixTree<std::vector<std::string>> commonAttributeMembers;
     std::vector<PersonProfile*> ptrToPersonProfiles;
 };
 

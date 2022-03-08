@@ -44,6 +44,8 @@ bool MemberDatabase::LoadDatabase(std::string file)
                 else if (flag==2)
                 {
                     email = line;
+                    if (db.search(email)!=nullptr)
+                        return false;
                     flag++;
                     PersonProfile* p =  new PersonProfile(name, email);
                     db.insert(email, p);
@@ -56,6 +58,7 @@ bool MemberDatabase::LoadDatabase(std::string file)
                 }
                 else if (flag==4)
                 {
+                    // Adding to RT that maps emails to PersonProfiles
                     string attribute;
                     string value;
                     size_t k = line.find(",");
@@ -63,6 +66,16 @@ bool MemberDatabase::LoadDatabase(std::string file)
                     value = line.substr(k+1,line.size()-1);
                     AttValPair pair(attribute,value);
                     temp->AddAttValPair(pair);
+                    // Adding to RadixTree from string to vector of string emails
+                    vector<string>* emails = commonAttributeMembers.search(line);
+                    if (emails==nullptr)
+                    {
+                        vector<string> tempEmailVector;
+                        tempEmailVector.push_back(email);
+                        commonAttributeMembers.insert(line, tempEmailVector);
+                    }
+                    else
+                        emails->push_back(email);
                 }
                 cout << line << '\n';
             }
@@ -70,15 +83,19 @@ bool MemberDatabase::LoadDatabase(std::string file)
             {
                 flag=1;
                 temp = nullptr;
-                //continue;
-                break;          // This only takes the first member
+                continue;
+//                break;          // This only takes the first member
             }
             //          break;
         }
         members.close();
+        return true;
     }
-    else cout << "Unable to open file" << endl;
-    return true;
+    else
+    {
+        cout << "Unable to open file" << endl;
+        return false;
+    }
 }
 
 const PersonProfile* MemberDatabase::GetMemberByEmail(std::string email) const
@@ -88,3 +105,13 @@ const PersonProfile* MemberDatabase::GetMemberByEmail(std::string email) const
     return *(db.search(email));
 }
 
+std::vector<std::string> MemberDatabase::FindMatchingMembers(const AttValPair& input) const
+{
+    string src = input.attribute+","+input.value;
+    vector<string>* temp = commonAttributeMembers.search(src);
+    vector<string> temp1;
+    if (temp==nullptr)
+        return temp1;
+    else
+        return *temp;        
+}

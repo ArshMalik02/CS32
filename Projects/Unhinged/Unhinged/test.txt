@@ -1,0 +1,26 @@
+Abdullah Fowler
+AbFow2483@charter.net
+13
+job,architect
+hobby,canyoneering
+hobby,slacklining
+hobby,painting
+hobby,painting
+trait,sly
+trait,incurious
+trait,excitable
+trait,unself-critical
+trait,vacuous
+trait,discouraging
+trait,disloyal
+trait,aloof
+
+Abdullah Fowler
+AbFow2483@charter.net
+6
+job,accountant
+hobby,origami
+trait,narrow
+trait,quirky
+trait,pedantic
+trait,uncritical
