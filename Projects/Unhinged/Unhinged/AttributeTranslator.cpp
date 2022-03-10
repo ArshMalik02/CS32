@@ -22,24 +22,30 @@ AttributeTranslator::~AttributeTranslator()
     }
 }
 
-bool AttributeTranslator::Load(string file)
+bool AttributeTranslator::Load(string filename)
 {
     string line;
-    ifstream attvals(file);
+    ifstream attvals(filename);
     if (attvals)
     {
         while (getline(attvals, line))
         {
+            // line: job,chef,hobby,eating
             size_t firstCommaID = line.find(",");
             string lineAfterFirstComma = line.substr(firstCommaID+1, line.size()-1);
+            // chef,hobby,eating
             
             size_t secondCommaID = lineAfterFirstComma.find(",");
             string attvalcommon = line.substr(0,firstCommaID+secondCommaID+1);
+            // job,chef
             string attvalcompatible = line.substr(firstCommaID+secondCommaID+2,line.size()-1);
+            // hobby,eating
             
             size_t thirdCommaID = attvalcompatible.find(",");
             string compatibleAttribute = attvalcompatible.substr(0,thirdCommaID);
+            // hobby
             string compatibleValue = attvalcompatible.substr(thirdCommaID+1,attvalcompatible.size()-1);
+            // eating
             
             // Inserting AttValPair into the radix tree.
             
@@ -58,6 +64,7 @@ bool AttributeTranslator::Load(string file)
                 ptrToAttValPairs.push_back(pair);
             }
         }
+        attvals.close();
         return true;
     }
     else

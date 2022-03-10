@@ -11,6 +11,7 @@
 		A1F680C127D47E7400E4473B /* PersonProfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1F680BF27D47E7400E4473B /* PersonProfile.cpp */; };
 		A1F680C427D5741000E4473B /* MemberDatabase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1F680C227D5741000E4473B /* MemberDatabase.cpp */; };
 		A1F680C727D6C35300E4473B /* AttributeTranslator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1F680C527D6C35300E4473B /* AttributeTranslator.cpp */; };
+		A1F680CA27D80F5400E4473B /* MatchMaker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1F680C827D80F5400E4473B /* MatchMaker.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		A1F680C327D5741000E4473B /* MemberDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberDatabase.h; sourceTree = "<group>"; };
 		A1F680C527D6C35300E4473B /* AttributeTranslator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AttributeTranslator.cpp; sourceTree = "<group>"; };
 		A1F680C627D6C35300E4473B /* AttributeTranslator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeTranslator.h; sourceTree = "<group>"; };
+		A1F680C827D80F5400E4473B /* MatchMaker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MatchMaker.cpp; sourceTree = "<group>"; };
+		A1F680C927D80F5400E4473B /* MatchMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchMaker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				A1D4329D27D007340061A1DA /* provided.h */,
 				A1D4329F27D45CF50061A1DA /* RadixTree.h */,
 				A1F680C227D5741000E4473B /* MemberDatabase.cpp */,
+				A1F680C827D80F5400E4473B /* MatchMaker.cpp */,
+				A1F680C927D80F5400E4473B /* MatchMaker.h */,
 				A1F680C527D6C35300E4473B /* AttributeTranslator.cpp */,
 				A1F680C627D6C35300E4473B /* AttributeTranslator.h */,
 				A1F680C327D5741000E4473B /* MemberDatabase.h */,
@@ -140,6 +145,7 @@
 			files = (
 				A1F680C127D47E7400E4473B /* PersonProfile.cpp in Sources */,
 				A1D4329627D006FA0061A1DA /* main.cpp in Sources */,
+				A1F680CA27D80F5400E4473B /* MatchMaker.cpp in Sources */,
 				A1F680C727D6C35300E4473B /* AttributeTranslator.cpp in Sources */,
 				A1F680C427D5741000E4473B /* MemberDatabase.cpp in Sources */,
 			);

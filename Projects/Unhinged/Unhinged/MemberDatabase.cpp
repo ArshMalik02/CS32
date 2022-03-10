@@ -22,10 +22,10 @@ MemberDatabase::~MemberDatabase()
     }
 }
 
-bool MemberDatabase::LoadDatabase(std::string file)
+bool MemberDatabase::LoadDatabase(std::string filename)
 {
     string line;
-    ifstream members(file);
+    ifstream members(filename);
     if (members)
     {
         int flag = 1;
@@ -77,7 +77,7 @@ bool MemberDatabase::LoadDatabase(std::string file)
                     else
                         emails->push_back(email);
                 }
-                cout << line << '\n';
+//                cout << line << '\n';
             }
             else
             {
