@@ -49,6 +49,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "utility.h"
 
 const std::string MEMBERS_FILE    = "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/testMembers.txt";
 const std::string TRANSLATOR_FILE = "/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/testTranslator.txt";
