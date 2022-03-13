@@ -13,7 +13,7 @@ bool compareEmailCounts(const EmailCount& lhs, const EmailCount& rhs)
         return true;
     else if (lhs.count<rhs.count)
         return false;
-    else if (lhs.email>rhs.email)
+    else if (lhs.email<rhs.email)
         return true;
     return false;
 }

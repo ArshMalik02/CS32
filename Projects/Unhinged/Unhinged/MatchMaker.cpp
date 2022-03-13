@@ -17,8 +17,8 @@ using namespace std;
 
 MatchMaker::MatchMaker(const MemberDatabase& mdb, const AttributeTranslator& at)
 {
-    m_db = mdb;
-    m_atDB = at;
+    m_db = &mdb;
+    m_atDB = &at;
 }
 
 MatchMaker::~MatchMaker(){}
@@ -26,7 +26,7 @@ MatchMaker::~MatchMaker(){}
 std::vector<EmailCount> MatchMaker::IdentifyRankedMatches(std::string email, int threshold) const
 {
     vector<EmailCount> matches;
-    const PersonProfile* person = m_db.GetMemberByEmail(email);
+    const PersonProfile* person = m_db->GetMemberByEmail(email);
     unordered_set<string> setOfCompatibleAtValPairs;
     
     // Getting the attVals of the person
@@ -34,7 +34,7 @@ std::vector<EmailCount> MatchMaker::IdentifyRankedMatches(std::string email, int
     {
         AttValPair atval;
         person->GetAttVal(i, atval);            // getting a single attval
-        vector<AttValPair> compatibleAtValPairs = m_atDB.FindCompatibleAttValPairs(atval); // getting that attvals's compatible attvals
+        vector<AttValPair> compatibleAtValPairs = m_atDB->FindCompatibleAttValPairs(atval); // getting that attvals's compatible attvals
         for (int j = 0; j!=compatibleAtValPairs.size(); j++)
         {
             setOfCompatibleAtValPairs.insert(compatibleAtValPairs[j].attribute+","+compatibleAtValPairs[j].value);
@@ -46,10 +46,10 @@ std::vector<EmailCount> MatchMaker::IdentifyRankedMatches(std::string email, int
         string att = (*it).substr(0, (*it).find(","));
         string val = (*it).substr((*it).find(",")+1,it->size()-1);
         AttValPair av(att,val);
-        vector<string> setOfPeopleWithCompatibleAtVals = m_db.FindMatchingMembers(av);
+        vector<string> setOfPeopleWithCompatibleAtVals = m_db->FindMatchingMembers(av);
         for (int k = 0; k!= setOfPeopleWithCompatibleAtVals.size(); k++)
         {
-            const PersonProfile* p = m_db.GetMemberByEmail(setOfPeopleWithCompatibleAtVals[k]);
+            const PersonProfile* p = m_db->GetMemberByEmail(setOfPeopleWithCompatibleAtVals[k]);
             int count = 0;
             for (int i = 0; i!= p->GetNumAttValPairs(); i++)
             {

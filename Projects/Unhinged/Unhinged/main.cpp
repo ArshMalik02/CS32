@@ -1,44 +1,46 @@
-//#include "RadixTree.h"
-//#include "PersonProfile.h"
-//#include "provided.h"
-//#include "MemberDatabase.h"
-//#include <iostream>
-//#include "AttributeTranslator.h"
-//#include "MatchMaker.h"
-//using namespace std;
-//
-//int main()
-//{
-////    AttributeTranslator ab;
-////    ab.Load("/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/translator.txt");
-////    vector<AttValPair> test;
-////    AttValPair source("trait","transparent");
-////    test = ab.FindCompatibleAttValPairs(source);
-////    for (int i = 0; i!= test.size(); i++)
-////    {
-////        cerr << test[i].attribute << endl;
-////        cerr << test[i].value << endl;
-////    }
-////    MemberDatabase mdb;
-////    mdb.LoadDatabase("/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/members.txt");
-////    AttValPair prof("job","accountant");
-////    vector<string> emails = mdb.FindMatchingMembers(prof);
-////    cerr << "--------------------------" << endl;
-////    for (int i = 0; i!=emails.size(); i++)
-////    {
-////        cerr << emails[i] << endl;
-////    }
-////    RadixTree<AttValPair> rt;
-////    AttValPair a1("hobby", "cricket");
-////    AttValPair b1("hobby", "football");
-////    AttValPair a2("age", "4");
-////    rt.insert(a1.attribute, a1);
-////    rt.insert(a2.attribute, a2);
-////    rt.insert(b1.attribute, b1);
-////    AttValPair* ptr = rt.search("hobby");
-////    cerr << ptr->value << endl;
-////    cerr << ptr->value << endl;
-//}
+/*
+#include "RadixTree.h"
+#include "PersonProfile.h"
+#include "provided.h"
+#include "MemberDatabase.h"
+#include <iostream>
+#include "AttributeTranslator.h"
+#include "MatchMaker.h"
+using namespace std;
+
+int main()
+{
+    AttributeTranslator ab;
+    ab.Load("/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/translator.txt");
+    vector<AttValPair> test;
+    AttValPair source("trait","transparent");
+    test = ab.FindCompatibleAttValPairs(source);
+    for (int i = 0; i!= test.size(); i++)
+    {
+        cerr << test[i].attribute << endl;
+        cerr << test[i].value << endl;
+    }
+//    MemberDatabase mdb;
+//    mdb.LoadDatabase("/Users/arshmalik/Documents/Projects/CS32-Projects/Projects/Unhinged/Unhinged/members.txt");
+//    AttValPair prof("job","accountant");
+//    vector<string> emails = mdb.FindMatchingMembers(prof);
+//    cerr << "--------------------------" << endl;
+//    for (int i = 0; i!=emails.size(); i++)
+//    {
+//        cerr << emails[i] << endl;
+//    }
+//    RadixTree<AttValPair> rt;
+//    AttValPair a1("hobby", "cricket");
+//    AttValPair b1("hobby", "football");
+//    AttValPair a2("age", "4");
+//    rt.insert(a1.attribute, a1);
+//    rt.insert(a2.attribute, a2);
+//    rt.insert(b1.attribute, b1);
+//    AttValPair* ptr = rt.search("hobby");
+//    cerr << ptr->value << endl;
+//    cerr << ptr->value << endl;
+}
+ */
 //main.cpp
 
 

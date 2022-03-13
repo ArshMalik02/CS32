@@ -21,8 +21,8 @@ public:
     ~MatchMaker();
     std::vector<EmailCount> IdentifyRankedMatches(std::string email,int threshold) const;
 private:
-    MemberDatabase m_db;
-    AttributeTranslator m_atDB;
+    const MemberDatabase* m_db;
+    const AttributeTranslator* m_atDB;
     bool checkIfExists(const std::vector<EmailCount>& check, std::string email) const;
 };
 
