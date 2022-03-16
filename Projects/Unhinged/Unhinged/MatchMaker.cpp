@@ -25,6 +25,8 @@ MatchMaker::~MatchMaker(){}
 
 std::vector<EmailCount> MatchMaker::IdentifyRankedMatches(std::string email, int threshold) const
 {
+    if (threshold<=0)
+        threshold = 1;
     vector<EmailCount> matches;
     const PersonProfile* person = m_db->GetMemberByEmail(email);
     unordered_set<string> setOfCompatibleAtValPairs;

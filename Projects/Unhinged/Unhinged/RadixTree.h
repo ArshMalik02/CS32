@@ -38,7 +38,8 @@ private:
     };
     Node* root;
     void deleteTree(Node* pair);
-    void insertHelper(std::string key, const ValueType& value, Node* &child, Node* &parent);
+    void insertHelper(std::string key, const ValueType& value, Node* &child);
+    ValueType* searchHelper(Node* Node, std::string key) const;
 };
 
 template <typename ValueType>
@@ -75,7 +76,7 @@ RadixTree<ValueType>::~RadixTree()
 
 template <typename ValueType>
 inline
-void RadixTree<ValueType>::insertHelper(std::string key, const ValueType& value, Node* &child, Node* &parent)
+void RadixTree<ValueType>::insertHelper(std::string key, const ValueType& value, Node* &child)
 {
     if (key.size()==0)
         return;
@@ -88,7 +89,7 @@ void RadixTree<ValueType>::insertHelper(std::string key, const ValueType& value,
         std::string wordAlreadyInTree = child->m_word;
         std::string commonPrefix = "";
         int i1 = 0; int i2 = 0;
-        while (i1<wordAlreadyInTree.size() && i2 < key.size())
+        while (i1<wordAlreadyInTree.size() && i2 < key.size())          // Computing the subset of the key and the existing word
         {
             if (wordAlreadyInTree[i1] == key[i2])
             {
@@ -99,18 +100,15 @@ void RadixTree<ValueType>::insertHelper(std::string key, const ValueType& value,
             i1++;
             i2++;
         }
-        if (i1==wordAlreadyInTree.size() && i2!=key.size())  // The entire wordAlreadyInTree is a prefix of key
+        if (i1==wordAlreadyInTree.size() && i2!=key.size())  // The entire wordAlreadyInTree is a prefix of key. Example: First insert "slow" then "slower"
         {
             std::string partToBeAdded = key.substr(i2,key.size()-1);
             int indexOfAddition = key[i2];
-            insertHelper(partToBeAdded, value, child->arr[indexOfAddition], child);
+            insertHelper(partToBeAdded, value, child->arr[indexOfAddition]);
         }
         else if (i2==key.size() && i1 != wordAlreadyInTree.size())
         {
-            // Updating the current child
-            // slower
-            // slow break slower into slow and er
-            // slo break into slo and w
+            // Key is the prefix of the existing word in the node . Example: First insert "slower" then "slow"
             std::string stringAfterFactorOutPrefix = wordAlreadyInTree.substr(i1, wordAlreadyInTree.size()-1);
             int indexOfAddition = stringAfterFactorOutPrefix[0];
             ValueType valueOfCurrentWord = child->m_value;
@@ -137,6 +135,7 @@ void RadixTree<ValueType>::insertHelper(std::string key, const ValueType& value,
         }
         else if (i1!=wordAlreadyInTree.size() && i2!=key.size())
         {
+            // Both the key and the existing word have a subset prefix smaller than both. Example: Insert "water" and then "waste"
             // splitting the curent word in the node and the key being inserted
             std::string currentWordLeftAfterPrefix = wordAlreadyInTree.substr(i1, wordAlreadyInTree.size()-1);
             std::string keyLeftAfterPrefix = key.substr(i2,key.size()-1);
@@ -163,7 +162,7 @@ void RadixTree<ValueType>::insertHelper(std::string key, const ValueType& value,
             }
             
             // Adding a new node for the left part of the key
-            insertHelper(keyLeftAfterPrefix, value, child->arr[keyLeftAfterPrefix[0]], child);
+            insertHelper(keyLeftAfterPrefix, value, child->arr[keyLeftAfterPrefix[0]]);
         }
         else
         {
@@ -180,14 +179,41 @@ void RadixTree<ValueType>::insert(std::string key, const ValueType& value)
     if (key.size()==0)
         return;
     int index = key[0];
-    insertHelper(key, value, root->arr[index], root);
+    insertHelper(key, value, root->arr[index]);
+}
+
+template <typename ValueType>
+inline
+ValueType* RadixTree<ValueType>::searchHelper(Node* Node, std::string key) const
+{
+    if (Node == nullptr)
+        return nullptr;
+    if (key.size() < Node->m_word.size())
+        return nullptr;
+    for (int i = 0; i!=Node->m_word.size(); i++)
+    {
+        if (Node->m_word[i]!=key[i])
+            return nullptr;
+    }
+    std::string splitKey = key.substr(Node->m_word.size(), key.size());
+    if (splitKey == "")
+    {
+        if (Node->endOfWord == true)
+            return &(Node->m_value);
+        else
+            return nullptr;
+    }
+    ValueType* v = searchHelper(Node->arr[splitKey[0]], splitKey);
+    if (v!=nullptr)
+        return v;
+    return nullptr;
 }
 
 template <typename ValueType>
 inline
 ValueType* RadixTree<ValueType>::search(std::string key) const
 {
-    return nullptr;
+    return searchHelper(root->arr[key[0]], key);
 }
 
 

@@ -77,16 +77,13 @@ bool MemberDatabase::LoadDatabase(std::string filename)
                     else
                         emails->push_back(email);
                 }
-//                cout << line << '\n';
             }
             else
             {
                 flag=1;
                 temp = nullptr;
                 continue;
-//                break;          // This only takes the first member
             }
-            //          break;
         }
         members.close();
         return true;

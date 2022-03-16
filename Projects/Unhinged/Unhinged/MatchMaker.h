@@ -1,5 +1,5 @@
 //
-//  MatchMaker.hpp
+//  MatchMaker.h
 //  Unhinged
 //
 //  Created by Arsh Malik on 3/8/22.
@@ -26,4 +26,4 @@ private:
     bool checkIfExists(const std::vector<EmailCount>& check, std::string email) const;
 };
 
-#endif /* MatchMaker_hpp */
+#endif /* MatchMaker_h */
